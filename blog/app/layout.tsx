@@ -7,17 +7,19 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import Footer from "./components/footer"
 import { baseUrl } from "./sitemap"
+import Head from "next/head"
 
 export const metadata: Metadata = {
     metadataBase: new URL(baseUrl),
+
     title: {
         default: "Luca Protelli",
         template: "%s | Luca Protelli",
     },
-    description: "This is Luca Protelli's Portfolio.",
+    description: "A blog about micro-interaction design & stuff..",
     openGraph: {
         title: "Luca Protelli",
-        description: "Hey! Click here to read my blog.",
+        description: "A blog about micro-interaction design & stuff.",
         url: baseUrl,
         siteName: "My Portfolio",
         locale: "en_US",
@@ -52,6 +54,14 @@ export default function RootLayout({
                 GeistMono.variable
             )}
         >
+            <Head>
+                <link
+                    rel="icon"
+                    type="image/png"
+                    href="/public/images/image.png"
+                    sizes="32x32"
+                />
+            </Head>
             <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
                 <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
                     <Navbar />
