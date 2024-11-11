@@ -17,7 +17,13 @@ function ArrowIcon() {
 
 function GithubIcon() {
     return (
-        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+        <svg
+            width="16"
+            height="16"
+            viewBox="0 0 100 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
             <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -28,54 +34,107 @@ function GithubIcon() {
     )
 }
 
+function LinkedinIcon() {
+    return (
+        <svg
+            width="16"
+            height="16"
+            viewBox="0 2 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect x="0" fill="none" width="16" height="16" />
+
+            <g>
+                <path
+                    fill="currentColor"
+                    d="M2.5 18h3V6.9h-3V18zM4 2c-1 0-1.8.8-1.8 1.8S3 5.6 4 5.6s1.8-.8 1.8-1.8S5 2 4 2zm6.6 6.6V6.9h-3V18h3v-5.7c0-3.2 4.1-3.4 4.1 0V18h3v-6.8c0-5.4-5.7-5.2-7.1-2.6z"
+                />
+            </g>
+        </svg>
+    )
+}
+
+function TwitterIcon() {
+    return (
+        <svg
+            width="14"
+            height="14"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 512 512"
+        >
+            <path
+                fill="currentColor"
+                d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+            />
+        </svg>
+    )
+}
+
 export default function Footer() {
     return (
         <footer className="mb-16">
-            <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
-                <li>
-                    <a
-                        className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="/rss"
-                    >
-                        <ArrowIcon />
-                        <p className="ml-2 h-7">rss</p>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://github.com/lucaprotelli"
-                    >
-                        <GithubIcon />
-                        <p className="ml-2 h-7">github</p>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://www.linkedin.com/in/luca-protelli/?trk=opento_sprofile_details"
-                    >
-                        <ArrowIcon />
-                        <p className="ml-2 h-7">linkedin</p>
-                    </a>
-                </li>
-                <li>
-                    <a
-                        className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        href="https://github.com/lucaprotelli/portfolio"
-                    >
-                        <ArrowIcon />
-                        <p className="ml-2 h-7">view source</p>
-                    </a>
-                </li>
+            <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:justify-between md:space-y-0 dark:text-neutral-300">
+                <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0">
+                    <li>
+                        <a
+                            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://github.com/lucaprotelli"
+                        >
+                            <GithubIcon />
+                            <p className="ml-2 h-7">github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://www.linkedin.com/in/luca-protelli/?trk=opento_sprofile_details"
+                        >
+                            <LinkedinIcon />
+                            <p className="ml-2 h-7">linkedin</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://x.com/prote_____"
+                        >
+                            <TwitterIcon />
+                            <p className="ml-2 h-7">twitter</p>
+                        </a>
+                    </li>
+                </div>
+                <div className="flex flex-col space-x-0 space-y-2 md:flex-row md:space-x-4 md:space-y-0">
+                    <li>
+                        <a
+                            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="/rss"
+                        >
+                            <ArrowIcon />
+                            <p className="ml-2 h-7">rss</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            href="https://github.com/lucaprotelli/portfolio"
+                        >
+                            <ArrowIcon />
+                            <p className="ml-2 h-7">view source</p>
+                        </a>
+                    </li>
+                </div>
             </ul>
             <p className="mt-8 text-neutral-600 dark:text-neutral-300">
                 © {new Date().getFullYear()} MIT Licensed
