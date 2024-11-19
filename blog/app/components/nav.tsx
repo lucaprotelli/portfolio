@@ -7,9 +7,9 @@ const navItems = {
     "/blog": {
         name: "blog",
     },
-    "/projects": {
-        name: "projects",
-    },
+    // "/projects": {
+    //     name: "projects",
+    // },
 }
 
 export function Navbar() {
@@ -35,7 +35,7 @@ export function Navbar() {
                     </div>
                     <div className="align-middle py-1 px-2 m-1 text-stone-50 bg-orange-600 rounded-lg border-2 border-amber-800 drop-shadow-xl shadow-black dark:shadow-white transition-all duration-300 hover:bg-orange-500 dark:hover:bg-orange-700">
                         <a href="mailto:lucaprotelli2004@gmail.com">
-                            contact me
+                            reach out
                         </a>
                     </div>
                 </nav>
