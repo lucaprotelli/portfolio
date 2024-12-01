@@ -16,10 +16,10 @@ export const metadata: Metadata = {
         default: "Luca Protelli",
         template: "%s | Luca Protelli",
     },
-    description: "A blog about micro-interaction design & stuff..",
+    description: "A blog about my design journey & stuffs..",
     openGraph: {
         title: "Luca Protelli",
-        description: "A blog about micro-interaction design & stuff.",
+        description: "A blog about my design journey & stuffs.",
         url: baseUrl,
         siteName: "My Portfolio",
         locale: "en_US",
