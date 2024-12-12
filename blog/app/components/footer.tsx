@@ -137,7 +137,7 @@ export default function Footer() {
                 </div>
             </ul>
             <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-                © {new Date().getFullYear()} MIT Licensed
+                MIT Licensed {new Date().getFullYear()} © Luca Protelli
             </p>
         </footer>
     )
