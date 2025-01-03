@@ -8,7 +8,7 @@ export default function Page() {
                 Luca Protelli
             </h1>
             <p className="mb-4">
-                {`Hi! I am a designer and developer based in Italy, currently studying Interface and Communication Technology at the University of Trento. My field of interest is quite extensive, ranging from human-computer interaction to web development. `}
+                {`Hi! I am a designer and developer based in Italy, currently studying Interface and Communication Technology at the University of Trento. My interests span a broad spectrum of subjects, encompassing web development, creative coding, game design, and human-computer interaction.`}
             </p>
             <p className="mb-4">
                 {`Ever since my high school years, I have been passionate about technology and design. I started my journey by learning how to code and design websites, and I have been expanding my knowledge ever since. I've devoted considerable time to UX challenges and hackathons.`}
